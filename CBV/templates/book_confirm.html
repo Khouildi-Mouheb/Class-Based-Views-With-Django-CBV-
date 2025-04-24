@@ -1,0 +1,6 @@
+<h2>Add a New Book</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}  <!-- Generates form fields automatically -->
+    <button type="submit">Create Book</button>
+</form>

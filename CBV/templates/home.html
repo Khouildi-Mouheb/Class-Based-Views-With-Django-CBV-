@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>{{ message }}</h1>
+    <p>hello,  {{ creator }}!</p>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="user_input" placeholder="Enter something">
+        <button type="submit">Submit</button>
+    </form>
+    <button><a href="{% url 'book_list' %}">book lisk</a></button>
+    
+</body>
+</html>
